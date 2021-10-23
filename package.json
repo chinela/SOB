@@ -1,0 +1,44 @@
+{
+  "name": "basic-frontend-starter",
+  "version": "1.0.0",
+  "description": "Easy starter pack for your simple frontend web projects",
+  "scripts": {
+    "clean": "rm -rf dist .cache",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.min.css && node-sass src/sass/main.scss src/css/style.min.css -w",
+    "devserver": "npm run clean && parcel src/index.html",
+    "start": "npm-run-all --parallel watch:sass devserver",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.comp.css -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css && node-sass src/css/style.prefix.css src/css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "build": "npm run clean && npm run build:css && parcel build src/index.html --public-url ./"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.3.7",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^4.3.1"
+  },
+  "author": "Hamza Fidan",
+  "keywords": [
+    "autoprefixer",
+    "bootsrap",
+    "es6",
+    "parcel",
+    "sass"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzafidan/basic-frontend-starter.git"
+  },
+  "homepage": "https://github.com/hamzafidan/basic-frontend-starter#readme",
+  "bugs": {
+    "url": "https://github.com/hamzafidan/basic-frontend-starter/issues"
+  }
+}

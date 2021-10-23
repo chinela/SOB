@@ -1,0 +1,7 @@
+.cache/
+node_modules/
+.parcel-cache/
+.parcel-cache*
+.parcel-cache/*
+parcel-cache
+parcel-cache/
