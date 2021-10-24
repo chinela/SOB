@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/index.4441ac44.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="shortcut icon" href="/sob_logo.f9aa1268.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
-<body class="overflow-hidden">
+<body class="overflowhidden">
     <!-- <div id="page__loader">
         <div class="outer__loading">
             <div class="inner__loading"></div>
@@ -46,6 +48,7 @@
                     <div id="navbarNavDropdown" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto main-nav">
                             <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="#Tokenomics" class="nav-link">Tokenomics</a></li>
                             <li class="nav-item"><a href="#road_map" class="nav-link">Roadmap</a></li>
                             <li class="nav-item"><a href="#how_to_buy" class="nav-link">How to buy</a></li>
                             <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
@@ -65,6 +68,7 @@
                 <div id="mobile__dropdown" class="hide">
                     <ul>
                         <li class="mobile__item"><a class="mobile__link" href="#about">About us</a></li>
+                        <li class="mobile__item"><a class="mobile__link" href="#Tokenomics">Tokenomics</a></li>
                         <li class="mobile__item"><a class="mobile__link" href="#road_map">Roadmap</a></li>
                         <li class="mobile__item"><a class="mobile__link" href="#how_to_buy">How to buy</a></li>
                         <li class="mobile__item"><a class="mobile__link" href="#partners">Partners</a></li>
@@ -202,83 +206,188 @@
                     </div>
                 </div>
             </section>
+            <section id="tokenomics" class="relative">
+                <div class="container__large container-fluid">
+                    <h1 class="lambo__section__title relative wow fadeInUp" data-wow-delay=".8s" title="Tokenomics">Tokenomics</h1>
+    
+                    <div class="ae3__suy__33 container">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </section>
             <section id="road_map">
                 <div class="container__large container-fluid">
                     <h1 class="lambo__section__title relative wow fadeInUp" data-wow-delay=".7s" title="Roadmap">Roadmap</h1>
     
                     <div class="ae3__suy__33">
                         <div class="container">
-                            <div class="timeline ">
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".2s">
-                                    <div class="timeline-time">
-                                        Q1<small>2021</small>
-                                    </div>
-                                    <div class="timeline-content timeline-complete">
-                                        <h4 class="text-white font-normal">Discord & Twitter</h4>
-                                        <p class="mb-0 text-center text-blue">Creation of our twitter and discord accounts.</p>
-                                    </div>
-                                </div>
-                        
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".4s">
-                                    <div class="timeline-time">
-                                        Q1<small>2021</small>
-                                    </div>
-                                    <div class="timeline-content timeline-complete">
-                                        <h4 class="text-white font-normal">Airdrop Distribution</h4>
-                                        <p class="mb-0 text-center text-blue">Airdrop distribution to our community members on discord.
-                                        </p>
-                                    </div>
-                                </div>
-                        
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".8s">
-                                    <div class="timeline-time">
-                                        Q1<small>2021</small>
-                                    </div>
-                                    <div class="timeline-content timeline-complete">
-                                        <h4 class="text-white font-normal">DEX Listing</h4>
-                                        <p class="mb-0 text-center text-blue">$SOB Market opens - Serum, Raydium, Dexlab, listing on coingecko</p>
-                                    </div>
-                                </div>
+                            <div class="roadmap__carousel mb-5">
+                                <button type="button" role="presentation" class="roadmap__carousel__ctrl roadmap__prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" role="presentation" class="roadmap__carousel__ctrl roadmap__next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div id="roadmap-carousel"></div>
+                            <div class="roadmap-carousel" id="roadmap-carousel">
+                                <div>
+                                    <h1 class="text-center text-white oe5__sas">Phase One</h1>
+                                    <div class="timeline ">
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="timeline-time">
+                                                Q1<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">Discord & Twitter</h4>
+                                                <p class="mb-0 text-center text-blue">Creation of our twitter and discord accounts.</p>
+                                            </div>
+                                        </div>
                                 
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
-                                    <div class="timeline-time">
-                                        Q1<small>2021</small>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h4 class="text-white font-normal">COPE Holders</h4>
-                                        <p class="mb-0 text-center text-blue">Airdrop to Cope holders</p>
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="timeline-time">
+                                                Q1<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">Airdrop Distribution</h4>
+                                                <p class="mb-0 text-center text-blue">Airdrop distribution to our community members on discord.
+                                                </p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="timeline-time">
+                                                Q2<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">DEX Listing</h4>
+                                                <p class="mb-0 text-center text-blue">$SOB Market opens - Serum, Raydium, Dexlab, listing on coingecko</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="timeline-time">
+                                                Q3<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">COPE Holders</h4>
+                                                <p class="mb-0 text-center text-blue">Airdrop to Cope holders</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="timeline-time">
+                                                Q4<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">Contest</h4>
+                                                <p class="mb-0 text-center text-blue">Gaming, meme and shilling.</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
+                                            <div class="timeline-time">
+                                                Q4<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">$SOB Dex lanuching</h4>
+                                                <p class="mb-0 text-center text-blue">Official lanuching of Solalambo Dex</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
+                                            <div class="timeline-time">
+                                                Q4<small>2021</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">Reward</h4>
+                                                <p class="mb-0 text-center text-blue">Reward to SOB holders and community.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                        
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
-                                    <div class="timeline-time">
-                                        2021<small>July</small>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h4 class="text-white font-normal">Contest</h4>
-                                        <p class="mb-0 text-center text-blue">Gaming, meme and shilling.</p>
+                                <div>
+                                    <h1 class="text-center text-white oe5__sas">Phase Two</h1>
+                                    <div class="timeline ">
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="timeline-time">
+                                                Q1<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">$SOB Available</h4>
+                                                <p class="mb-0 text-center text-blue">$SOB merchandise is made available for the community.</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="timeline-time">
+                                                Q1<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">$SOB Staking</h4>
+                                                <p class="mb-0 text-center text-blue">Stake $SOB to earn more $SOB</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="timeline-time">
+                                                Q2<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content timeline-complete">
+                                                <h4 class="text-white font-normal">Pool Launch</h4>
+                                                <p class="mb-0 text-center text-blue">Orca pool launch</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="timeline-time">
+                                                Q3<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">Coinmarket Cap Listin</h4>
+                                                <p class="mb-0 text-center text-blue">We will be listing on coinmarket cap</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="timeline-time">
+                                                Q3<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">NFTs</h4>
+                                                <p class="mb-0 text-center text-blue">Working on NFTs and Tipbots</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
+                                            <div class="timeline-time">
+                                                Q4<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">Orientation</h4>
+                                                <p class="mb-0 text-center text-blue">Orientating North America, Southern Asia, Latin America and Afric on Solana</p>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
+                                            <div class="timeline-time">
+                                                Q4<small>2022</small>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4 class="text-white font-normal">Support Solana</h4>
+                                                <p class="mb-0 text-center text-blue">Continue our mission to be a community driven coin and keep on supporting the Solana ecosystem</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                        
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="timeline-time">
-                                        2021<small>July</small>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h4 class="text-white font-normal">$SOB Dex lanuching</h4>
-                                        <p class="mb-0 text-center text-blue">Official lanuching of Solalambo Dex</p>
-                                    </div>
-                                </div>
-                        
-                                <div class="timeline-row wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="timeline-time">
-                                        2021<small>July</small>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <h4 class="text-white font-normal">Reward</h4>
-                                        <p class="mb-0 text-center text-blue">Reward to SOB holders and community.</p>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="roadmap__carousel mt-5">
+                                <button type="button" role="presentation" class="roadmap__carousel__ctrl roadmap__prev roadmap__btn__below">
+                                    <i class="fa fa-chevron-left"></i>
+                                </button>
+                                <button type="button" role="presentation" class="roadmap__carousel__ctrl roadmap__next roadmap__btn__below">
+                                    <i class="fa fa-chevron-right"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -292,11 +401,11 @@
                         <ul id="hw__b__list">
                             <li class="mb-lg-5 mb-3 wow slideInLeft" data-wow-delay=".1s">
                                 <span>1</span>
-                                <p class="mb-0">Create an SPL wallet using <a href="https://sollet.io/" class="font-medium text-green">Sollet</a></p>
+                                <p class="mb-0">Create an SPL wallet using <a target="_blank" href="https://sollet.io/" class="font-medium text-green">Sollet</a></p>
                             </li>
                             <li class="mb-lg-5 mb-3 wow slideInLeft" data-wow-delay=".2s">
                                 <span>2</span>
-                                <p class="mb-0">2.	Go to a DEX either <a href="https://trade.dexlab.space/" class="font-medium text-green">Dexlab</a> or <a href="https://dex.raydium.io/" class="font-medium text-green">Raydium</a></p>
+                                <p class="mb-0">2.	Go to a DEX either <a target="_blank" href="https://dex.sonar.watch/#/market/HfjS66SzVEqFxAa8nSQnqHA7SnfygWqGTVz6LFS7q4zu" class="font-medium text-green">Sonar</a> or <a target="_blank" href="https://dex.raydium.io/#/market/HfjS66SzVEqFxAa8nSQnqHA7SnfygWqGTVz6LFS7q4zu" class="font-medium text-green">Raydium</a></p>
                             </li>
                             <li class="mb-lg-5 mb-3 wow slideInLeft" data-wow-delay=".3s">
                                 <span>3</span>
@@ -308,7 +417,7 @@
                             </li>
                             <li class="mb-lg-5 mb-3 wow slideInLeft" data-wow-delay=".1s">
                                 <span>5</span>
-                                <p class="mb-0">SOB is also available in other exchanges: <a href="" class="font-medium text-green">Available DEXs</a></p>
+                                <p class="mb-0">SOB is also available in other exchanges: <a href="#partners" class="font-medium text-green">Available DEXs</a></p>
                             </li>
                             <li class="mb-lg-5 mb-3 wow slideInLeft" data-wow-delay=".1s">
                                 <span>6</span>
@@ -384,7 +493,12 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/index.3183ba65.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
     <script src="/index.cea2f5e3.js"></script>
 </body>
 </html>

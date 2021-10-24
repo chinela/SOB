@@ -203,7 +203,7 @@
 #summary__section{
     padding: 7em 0;
 }
-#about, #how_to_buy{
+#about, #how_to_buy, #tokenomics{
     padding: 7em 0;
 }
 #road_map{
@@ -405,6 +405,34 @@
     background: #00B5fe;
     color: #fff;
 }
+.oe5__sas{
+  font-size: 30px;
+}
+.roadmap__carousel {
+  display: flex;
+  justify-content: center;
+}
+.roadmap__carousel__ctrl{
+  border: 1px solid #97afd5 !important;
+  border-radius: 30% !important;
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: all 0.4s;
+  background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.roadmap__carousel__ctrl:hover{
+  background: #97afd5;
+}
+#chartdiv {
+  width: 100%;
+  height: 800px;
+}
 @keyframes inneer__loading {
   50% {transform: rotate(180deg);}
 }
@@ -481,6 +509,13 @@
 #about{
   padding: 2.2em 0;
 }
+#tokenomics{
+  padding: 3em 0;
+}
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
 }
 @media(max-width:800px) {
   .lambo__section__title::before{
@@ -498,6 +533,9 @@
   }
   #hw__b__list li p{
     width: calc(100% - 50px);
+  }
+  .oe5__sas{
+    font-size: 20px;
   }
 }
 @media(max-width:700px) {
@@ -610,6 +648,7 @@
   height: 80px;
   line-height: 80px;
 }
+
 }
 @media(max-width:470px) {
   .lambo__section__title::before{
@@ -6894,7 +6933,7 @@ footer p {
   100% {
     top: 110%; } }
 .circles {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
