@@ -1,4 +1,3 @@
-@import url(../../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
 @import url(../css/responsive.css);
 @import url(../plugins/css/animate.css);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
@@ -3996,12 +3995,10 @@ footer p {
     top: 110%; } }
 
 .circles {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  width: 100%; }
 
 .circles li {
   position: absolute;
@@ -4033,7 +4030,7 @@ footer p {
   animation-delay: 4s; }
 
 .circles li:nth-child(4) {
-  left: 40%;
+  left: 60%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
@@ -4046,15 +4043,15 @@ footer p {
   animation-delay: 0s; }
 
 .circles li:nth-child(6) {
-  left: 75%;
-  width: 110px;
-  height: 110px;
+  left: -17%;
+  width: 62px;
+  height: 62px;
   animation-delay: 3s; }
 
 .circles li:nth-child(7) {
-  left: 35%;
-  width: 150px;
-  height: 150px;
+  left: 25%;
+  width: 50px;
+  height: 50px;
   animation-delay: 7s; }
 
 .circles li:nth-child(8) {
@@ -4072,11 +4069,38 @@ footer p {
   animation-duration: 35s; }
 
 .circles li:nth-child(10) {
-  left: 85%;
-  width: 150px;
-  height: 150px;
+  left: 2%;
+  width: 47px;
+  height: 47px;
+  animation-delay: 2s;
+  animation-duration: 20s; }
+
+.circles li:nth-child(11) {
+  left: 78%;
+  width: 37px;
+  height: 57px;
+  animation-delay: 2s;
+  animation-duration: 34s; }
+
+.circles li:nth-child(12) {
+  left: 75%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 3s; }
+
+.circles li:nth-child(13) {
+  left: 2%;
+  width: 40px;
+  height: 60px;
   animation-delay: 0s;
-  animation-duration: 11s; }
+  animation-duration: 20s; }
+
+.circles li:nth-child(14) {
+  left: 18%;
+  width: 27px;
+  height: 27px;
+  animation-delay: 2s;
+  animation-duration: 20s; }
 
 @keyframes banner__animate {
   0% {
