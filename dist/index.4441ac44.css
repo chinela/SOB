@@ -6933,12 +6933,10 @@ footer p {
   100% {
     top: 110%; } }
 .circles {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  width: 100%; }
 .circles li {
   position: absolute;
   display: block;
@@ -6965,7 +6963,7 @@ footer p {
   height: 20px;
   animation-delay: 4s; }
 .circles li:nth-child(4) {
-  left: 40%;
+  left: 60%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
@@ -7001,6 +6999,29 @@ footer p {
   left: 2%;
   width: 47px;
   height: 47px;
+  animation-delay: 2s;
+  animation-duration: 20s; }
+.circles li:nth-child(11) {
+  left: 78%;
+  width: 37px;
+  height: 57px;
+  animation-delay: 2s;
+  animation-duration: 34s; }
+.circles li:nth-child(12) {
+  left: 75%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 3s; }
+.circles li:nth-child(13) {
+  left: 2%;
+  width: 40px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 20s; }
+.circles li:nth-child(14) {
+  left: 18%;
+  width: 27px;
+  height: 27px;
   animation-delay: 2s;
   animation-duration: 20s; }
 @keyframes banner__animate {
