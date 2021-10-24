@@ -10,7 +10,7 @@ $(document).ready(function() {
     setTimeout(()=>{
         $("#page__loader").fadeOut();
         $("body").removeClass('overflow-hidden');
-    }, 5000);
+    }, 3000);
     $(window).scroll(function() {
         if ($(this).scrollTop() > 240) $('#back-to-top').fadeIn();
         else $('#back-to-top').fadeOut();
