@@ -4271,10 +4271,6 @@ footer p {
     margin: 0 0 10px 0; }
   .timeline .timeline-row:nth-child(odd) .timeline-content {
     margin: 0; }
-  .timeline .timeline-row:nth-child(odd) .timeline-content:before {
-    display: none; }
-  .timeline .timeline-row:nth-child(odd) .timeline-content:after {
-    display: none; }
   .timeline .timeline-row:nth-child(even) {
     padding: 0; }
   .timeline .timeline-row:nth-child(even) .timeline-time {
@@ -4285,7 +4281,9 @@ footer p {
     text-align: left; }
   .timeline .timeline-row:nth-child(even) .timeline-content {
     margin: 0; }
-  .timeline .timeline-row:nth-child(even) .timeline-content:before {
-    display: none; }
-  .timeline .timeline-row:nth-child(even) .timeline-content:after {
-    display: none; } }
+  .timeline-row:nth-child(even) .timeline-content:before {
+    left: -10px;
+    right: initial; }
+  .timeline-row:nth-child(odd) .timeline-content:before {
+    left: -10px;
+    right: initial; } }
