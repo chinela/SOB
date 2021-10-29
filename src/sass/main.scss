@@ -616,12 +616,6 @@ footer p{
         .timeline .timeline-row:nth-child(odd) .timeline-content {
             margin: 0;
         }
-        .timeline .timeline-row:nth-child(odd) .timeline-content:before {
-            display: none;
-        }
-        .timeline .timeline-row:nth-child(odd) .timeline-content:after {
-            display: none;
-        }
         .timeline .timeline-row:nth-child(even) {
             padding: 0;
         }
@@ -635,11 +629,13 @@ footer p{
         .timeline .timeline-row:nth-child(even) .timeline-content {
             margin: 0;
         }
-        .timeline .timeline-row:nth-child(even) .timeline-content:before {
-            display: none;
+        .timeline-row:nth-child(even) .timeline-content:before {
+            left: -10px;
+            right: initial;
         }
-        .timeline .timeline-row:nth-child(even) .timeline-content:after {
-            display: none;
+        .timeline-row:nth-child(odd) .timeline-content:before {
+            left: -10px;
+            right: initial;
         }
     }
 
