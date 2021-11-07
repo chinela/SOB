@@ -108,4 +108,10 @@ $(document).ready(function() {
       let totalSupply = 1000000;
       return (percent / 100) * totalSupply
     }
+
+    $('#whitePaperBtn').click(e => {
+        e.preventDefault();
+
+        window.open($('#whitePaperBtn').data('link'), '_blank');
+    })
 })
